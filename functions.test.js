@@ -1,4 +1,4 @@
-const {stringLength} = require('./functions');
+const {stringLength, reverseString} = require('./functions');
 
 // Task 1
 describe('stringLength', () => {
@@ -10,5 +10,12 @@ describe('stringLength', () => {
   });
   test('TextOverTen return error', () => {
     expect(stringLength('textOverTen')).toBe('error');
+  });
+});
+
+// Task 2
+describe('reverseString', () => {
+  test('someText = txeTemos', () => {
+    expect(reverseString('someText')).toBe('txeTemos');
   });
 });
