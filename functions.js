@@ -30,6 +30,14 @@ class Calculator {
   multiply(a, b) {
     return a*b;
   };
-}
+};
 
-export {stringLength, reverseString, Calculator};
+// Task 4
+const capitalize = str => {
+  const text = str.toLowerCase().split('')
+  const one = text.shift().toUpperCase()
+  text.unshift(one)
+  return text.join('')
+};
+
+export {stringLength, reverseString, Calculator, capitalize};
