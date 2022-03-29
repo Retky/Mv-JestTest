@@ -1,4 +1,4 @@
-import {stringLength, reverseString, Calculator} from './functions';
+import {stringLength, reverseString, Calculator, capitalize} from './functions';
 
 // Task 1
 describe('stringLength', () => {
@@ -80,5 +80,12 @@ describe('Multiply', () => {
   });
   test('1*4 = 4', () => {
     expect(calc.multiply(1,4)).toBe(4);
+  });
+});
+
+// Task 4
+describe('Capitalize', () => {
+  test('"hello" = "Hello"', () => {
+    expect(capitalize('hello')).toBe('Hello')
   });
 });
